@@ -1,0 +1,50 @@
+:root {
+  /* --bg: #ff9671; */
+  --bg: #041b27;
+  --text: #7acbfd;
+  --header: #ff9671;
+}
+body {
+  background-color: var(--bg);
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+input {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  /* background-color: #74ffff; */
+  background-color: #143244;
+  border: 3px solid var(--text);
+  border-radius: 2rem;
+}
+
+#heding {
+  letter-spacing: 10px;
+  font-family: monospace;
+  font-size: 4rem;
+  color: var(--header);
+}
+#notATagLine {
+  color: #74ffff;
+}
+#outputText {
+  margin: 2rem;
+  color: #c7fa68;
+}
+#emojiDisplayer {
+  margin: 2rem;
+
+  display: inline;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+#emojiCOntainer {
+  padding: 2rem;
+  border: 2px solid #1dd2ff;
+  margin: auto;
+  width: 500px;
+}
