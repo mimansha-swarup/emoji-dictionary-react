@@ -27,7 +27,6 @@ const db = {
   "💧": "Drople"
 };
 var dbKey = Object.keys(db);
-console.log(dbKey);
 
 export default function App() {
   const [ogText, textSetter] = useState("");
@@ -58,7 +57,7 @@ export default function App() {
       <h3 id="outputText">{ogText}</h3>
       <div id="emojiCOntainer">
         {dbKey.map((emoji) => (
-          <p onClick={() => textClicker(emoji)} id="emojiDisplayer">
+          <p key={emoji} onClick={() => textClicker(emoji)} id="emojiDisplayer">
             {emoji}
           </p>
         ))}
